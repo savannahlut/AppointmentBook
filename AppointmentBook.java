@@ -12,7 +12,10 @@ public class AppointmentBook {
 
     private void reserveBlock(int period, int startMinute, int duration) 
     {
-        /* implementation not shown */ 
+        for(int i = startMinute; i < startMinute + duration; i++)
+        {
+            schedule[period - 1][i] = false;
+        }
     }
 
     public int findFreeBlock(int period, int duration) 
