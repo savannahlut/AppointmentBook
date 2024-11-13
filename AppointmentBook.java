@@ -18,7 +18,7 @@ public class AppointmentBook {
     public int findFreeBlock(int period, int duration) 
     {
         int freeBlock = 0;
-        for (int minute = 0; minute <= 59; minute++)
+        for (int minute = 0; minute < 60; minute++)
         {
             if (isMinuteFree(period, minute))
             {
